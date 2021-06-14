@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "postgrest-worker-example",
+  "version": "1.0.0",
+  "description": "A template for kick starting a Cloudflare Workers project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "Kristian Freeman <kristian@kristianfreeman.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@supabase/postgrest-js": "^0.31.1",
+    "itty-router": "^2.3.10"
+  }
+}

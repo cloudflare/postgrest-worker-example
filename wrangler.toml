@@ -1,0 +1,8 @@
+name = "postgrest-worker-example"
+
+type = "webpack"
+webpack_config = "webpack.config.js"
+
+account_id = "dc56444c4c955a1653106ccf997c1067"
+workers_dev = true
+
