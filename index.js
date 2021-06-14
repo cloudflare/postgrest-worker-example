@@ -23,7 +23,6 @@ router.get('/users/:id', async ({ params }) => {
     .from('users')
     .select()
     .eq('id', id)
-    .limit(1)
 
   if (error) throw error
 
@@ -31,6 +30,7 @@ router.get('/users/:id', async ({ params }) => {
 
   return new Response(JSON.stringify({ user }), {
     headers: { 'content-type': 'application/json' },
+    status: user ? 200 : 404
   })
 })
 
